@@ -1,5 +1,20 @@
 # online_survey
-A Online Survey portal for a User to vote for favourite movies once.
+Django based portal to where an User can vote for his favourite multiple movies once and visit survey report multiple times.
+
+## Getting Started
+
+### Setting up a Dev Environment
+
+online_survey is a Python 2.7 application
+
+1. On GitHub, fork the repo by clicking the Fork button in the GitHub UI.
+2. Clone the repo on your local machine and go into the directory:
+
+       $ git clone https://github.com/shashank0201/online_survey.git
+       $ Run the command :from the path where manage.py exist: python manage.py runserver
+
+3. Go to 0.0.0.0:8000/survey in your browser.
+
 
 To run project:
 Steps:
@@ -20,5 +35,3 @@ DATABASES = {
         'PORT': '3306',
     }
 }
-    
-4. Run the command :from the path where manage.py exist> python manage.py runserver
