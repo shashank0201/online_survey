@@ -1,0 +1,47 @@
+{% extends 'base.html' %} {% load staticfiles %}
+{% block content %}
+<div class="container">
+   <div class="row">
+      <div class="jumbotron">
+         <h1>Servey Report !!</h1>
+      </div>
+      <!-- end jumbtron -->
+   </div>
+   <div class="panel panel-primary">
+      <div class="panel-heading">
+         <div class="row">
+            <div class="col col-xs-6">
+               <h3 class="panel-title"> Total Vote by All Visitors : {{total_vote}}</h3>
+            </div>
+         </div>
+      </div>
+      <div class="panel-body">
+         <table id="example" class="table table-striped table-bordered table-responsive" cellspacing="0" width="100%" >
+            <thead>
+               <tr >
+                  <th>Votes Each Movie</th>
+                  <th>Percentage Vote</th>
+                  <th>Movie</th>
+                  <th>Year</th>
+               </tr>
+            </thead>
+            {% for row in movieDetails %}
+            <tr >
+               <td>{{ row.vote_count }} </td>
+               <td>{{ row.vote_percentage }}</td>
+               <td>{{ row.name }} </td>
+               <td>{{ row.year }}</td>
+            </tr>
+            {% endfor %}
+         </table>
+      </div>
+   </div>
+   <!-- panel primary end -->
+</div>
+<!-- container end -->
+{% endblock %}
+      <script type="text/javascript">
+      $(document).ready(function () {
+       $('#example').DataTable();    
+      });
+      </script>
