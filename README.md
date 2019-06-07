@@ -1,5 +1,5 @@
 # online_survey
-Django based portal to where an User can vote for his favourite multiple movies once and visit survey report multiple times.
+Django based portal where an User can vote for his favourite multiple movies once and can see overall survey report for all the listed movies.
 
 ## Getting Started
 
@@ -25,13 +25,13 @@ Steps:
     
 3. Replace the database name in online_survey/survey_project/settings.py that you have set in above command (newdatabase)
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'newdatabase',
-        'USER': '[your system username]',
-        'PASSWORD': '[password]',
-        'HOST': '127.0.0.1',   # Or an IP Address that your DB is hosted on
-        'PORT': '3306',
-    }
-}
+* DATABASES = {
+*    'default': {
+*       'ENGINE': 'django.db.backends.mysql',
+*        'NAME': 'newdatabase',
+*        'USER': '[your system username]',
+*        'PASSWORD': '[password]',
+*        'HOST': '127.0.0.1',   # Or an IP Address that your DB is hosted on
+*        'PORT': '3306',
+*    }
+* }
