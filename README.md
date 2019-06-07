@@ -29,7 +29,7 @@ Database set up(to import db in local system):
            'default': {
               'ENGINE': 'django.db.backends.mysql',
                'NAME': 'newdatabase',
-               'USER': '[your system username]',
+               'USER': '[db_username]',
                'PASSWORD': '[password]',
                'HOST': '127.0.0.1',   # Or an IP Address that your DB is hosted on
                'PORT': '3306',
