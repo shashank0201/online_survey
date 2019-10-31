@@ -1,4 +1,4 @@
-Django==1.10
+Django==1.11.23
 django-admin-view-permission==1.9
 mysql-connector==2.2.9
 MySQL-python==1.2.5
